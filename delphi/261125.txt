@@ -1,0 +1,22 @@
+Desafio: Totais por atendimento
+Dificuldade: Intermediária
+
+Você recebe uma lista de envios. Cada envio possui um identificador de atendimento, um identificador de envio e um valor em centavos.
+
+Calcule o total em centavos de cada atendimento. Um mesmo envio pode aparecer mais de uma vez na lista; nesse caso, ele deve ser contado apenas uma vez. Considere que um envio é identificado pela combinação de IdAtendimento e IdEnvio.
+
+Retorne uma lista com um registro por atendimento, contendo IdAtendimento e TotalCentavos. Ordene o resultado pelo IdAtendimento em ordem crescente.
+
+Restrições:
+- A lista pode conter até 100.000 registros.
+- Os identificadores são números inteiros não negativos.
+- Os valores são informados em centavos.
+- Uma lista vazia deve produzir uma lista vazia.
+
+Exemplo de entrada:
+[(9, 502, 450), (7, 501, 1200), (7, 501, 1200), (7, 503, 350), (9, 504, 450)]
+
+Exemplo de saída:
+[(7, 1550), (9, 900)]
+
+No exemplo, o envio (7, 501) aparece duas vezes, mas seus 1200 centavos são contabilizados uma única vez.

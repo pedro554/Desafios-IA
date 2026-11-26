@@ -1,0 +1,27 @@
+Desafio: Validar parênteses balanceados
+Dificuldade: Fácil
+
+Implemente uma função que receba uma string formada apenas pelos caracteres '(' e ')' e retorne True se os parênteses estiverem balanceados, ou False caso contrário.
+
+Uma string está balanceada quando cada parêntese de abertura pode ser associado a um parêntese de fechamento posterior, sem que em nenhum ponto haja mais fechamentos do que aberturas, e ao final todos os parênteses abertos estejam fechados.
+
+Restrições:
+- A string pode ser vazia.
+- Se houver qualquer caractere diferente de '(' ou ')', considere a entrada inválida e retorne False.
+
+Exemplos:
+
+Entrada: "()"
+Saída: True
+
+Entrada: "(()())"
+Saída: True
+
+Entrada: "())("
+Saída: False
+
+Entrada: ""
+Saída: True
+
+Entrada: ")()"
+Saída: False
