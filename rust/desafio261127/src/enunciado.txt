@@ -1,0 +1,28 @@
+Desafio de lógica - Rust - 27/11/2026
+
+Maior sequência de alta
+
+Dada uma lista de temperaturas inteiras na ordem em que foram registradas,
+retorne a quantidade de elementos do maior trecho consecutivo em que cada
+temperatura é estritamente maior que a anterior.
+
+Os elementos do trecho devem ocupar posições vizinhas na lista. Qualquer
+aumento mantém o trecho. Uma temperatura igual ou menor encerra o trecho
+anterior e inicia outro na posição atual.
+
+Assinatura
+
+fn maior_sequencia_de_alta(temperaturas: &[i32]) -> usize
+
+Considere listas com até 100.000 temperaturas. Para uma lista vazia, retorne 0.
+
+Exemplos
+
+[3, 5, 7, 2, 4, 6, 8] -> 4 (trecho [2, 4, 6, 8])
+[1, 4, 2, 3, 5]       -> 3 (trecho [2, 3, 5])
+[-3, -1, -1, 0]       -> 2 (trechos [-3, -1] e [-1, 0])
+[-2, 0, 3, 8]         -> 4 (a lista inteira é crescente)
+[]                    -> 0
+[8]                   -> 1
+[4, 4, 4]             -> 1
+[9, 7, 5]             -> 1
