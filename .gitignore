@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+/python/build/
+/python/dist/
+*.egg-info/
+
+# Configuração local
+.env
+.env.local
+
+# Delphi
+__history/
+__recovery/
+*.dcu
+*.dcp
+*.bpl
+*.dsk
+*.dproj.local
+*.identcache
+*.projdata
+*.map
+*.rsm
+*.tds
+*.exe
+*.~*
+/delphi/**/Win32/
+/delphi/**/Win64/
+
+# Rust
+target/

@@ -1,0 +1,26 @@
+Desafio de lógica — Python — 26/11/2026
+
+Primeiro caractere único
+
+Dada uma string texto, retorne o índice da primeira ocorrência de um caractere que aparece exatamente uma vez. Se não houver nenhum, retorne -1.
+
+Assinatura:
+
+def primeiro_unico(texto: str) -> int:
+    pass
+
+Exemplos:
+
+texto = "leetcode"  -> 0
+texto = "loveleetcode" -> 2
+texto = "aabb" -> -1
+
+Restrições:
+- 1 <= len(texto) <= 100_000
+- texto contém apenas letras minúsculas de a a z.
+
+Casos de borda para considerar:
+- Uma string com apenas um caractere.
+- O primeiro caractere é único, mas há repetições depois.
+- Há caracteres únicos, mas o primeiro aparece somente depois de várias repetições.
+- Todos os caracteres aparecem mais de uma vez.
